@@ -34,7 +34,9 @@ Our enhanced ESRGAN model with the attention mechanism can be referred from the 
 
 ![1](https://github.com/Smruti0603/Uneshance_2023/assets/121166411/e382277b-2b70-45d6-b63d-b4073397acde)
 
-👀Attention mechanism :Attention can be interpreted as a means of biasing the allocation of available computational resources towards the most informative components of a signal. Atten- tion mechanisms have demonstrated their utility across many tasks including sequence learn- ing, localisation and understanding in images , image captioning and lip reading. In these applications, it can be incorporated as an operator following one or more layers representing higher-level abstractions for adaptation between modalities. In this paper we proposed apply- ing attention mechanism using SE block, which is an architectural unit designed to improve the representational power of a network by enabling it to perform dynamic channel-wise fea- ture recalibration. SE block [1] comprises a lightweight gating mechanism which focuses on enhancing the representational power of the network by modelling channel-wise relationships in a computationally efficient manner.
+👀Attention mechanism :
+
+Attention can be interpreted as a means of biasing the allocation of available computational resources towards the most informative components of a signal. Atten- tion mechanisms have demonstrated their utility across many tasks including sequence learn- ing, localisation and understanding in images , image captioning and lip reading. In these applications, it can be incorporated as an operator following one or more layers representing higher-level abstractions for adaptation between modalities. In this paper we proposed apply- ing attention mechanism using SE block, which is an architectural unit designed to improve the representational power of a network by enabling it to perform dynamic channel-wise fea- ture recalibration. SE block [1] comprises a lightweight gating mechanism which focuses on enhancing the representational power of the network by modelling channel-wise relationships in a computationally efficient manner.
 
 
 We have integrated the SE Block in the network architecure of ESRGAN by replacing with a convolution layer after the up-sampling layer.SE block’s flexibility allows it to be applied directly on transformations beyond standard convolutions. The SE Block is shown in Figure 4
@@ -49,6 +51,8 @@ We have integrated the SE Block in the network architecure of ESRGAN by replacin
 
 
 💪🏽Training
+
+
 To evaluate the influence of SE block , we performed model traning on the IVUS image dataset provided USenhance 2023 which comprises 1045 IVUS images of various parts of our body including breast , thyroid etc.We trained the network on the training set and report the PSNR , MSE and SSIM on the testing set.The model has been trained using 300 epochs.
 
 #➣Results
